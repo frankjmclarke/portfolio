@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/constants.dart';
-import 'package:portfolio/skills/outline_skills_container.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+import '../constants.dart';
+import 'outline_skills_container.dart';
 
 class SkillsView extends StatelessWidget {
   @override

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/skills/skills_view.dart';
+import 'skills_view.dart';
 
 class OutlineSkillsContainer extends StatelessWidget {
   const OutlineSkillsContainer({
     Key? key,
     required this.index,
-    this.rowIndex:0,
-    this.isMobile:true,
+    this.rowIndex: 0,
+    this.isMobile: true,
   }) : super(key: key);
 
   final int index;
@@ -15,10 +15,10 @@ class OutlineSkillsContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final parsedIndex = isMobile ?? false ? index : (index * 2) + rowIndex;
+    final parsedIndex = isMobile ? index : (index * 2) + rowIndex;
     final colors = ColourAssets.all;
     return Container(
-      width: isMobile ?? false ? double.infinity : null,
+      width: isMobile ? double.infinity : null,
       padding: EdgeInsets.all(10),
       decoration: BoxDecoration(
           border: Border.all(

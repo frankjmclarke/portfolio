@@ -3,9 +3,10 @@ import 'package:flutter/material.dart';
 
 class HeaderBody extends StatelessWidget {
   final bool isMobile;
+
   const HeaderBody({
-    Key ?key,
-    this.isMobile:true,
+    Key? key,
+    this.isMobile: true,
   }) : super(key: key);
 
   @override

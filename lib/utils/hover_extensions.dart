@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-// ignore: avoid_web_libraries_in_flutter
 import 'dart:html' as html;
 
 extension HoverExtension on Widget {
@@ -10,7 +9,7 @@ extension HoverExtension on Widget {
   // The code block is optional.
   // If want to use, add as such: widget.showCursorOnHover
   Widget get showCursorOnHover {
-    return MouseRegion( //callback
+    return MouseRegion(
       child: this,
       // More information can be found: https://developer.mozilla.org/en-US/docs/Web/CSS/cursor
       // The different cursors: help, wait, crosshair, not-allowed, zoom-in, grab

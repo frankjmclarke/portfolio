@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+
 import '../constants.dart';
 
 class NavigationBarView extends StatelessWidget {
@@ -92,4 +93,5 @@ class NavigationBarItem extends StatelessWidget {
         ),
       ),
     );
-  }}
+  }
+}
